@@ -1,0 +1,139 @@
+body {
+  background-color: #fdfcfc;
+  
+}
+.head {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.top {
+  display: flex;
+  flex-direction: column;
+}
+  .header {
+  background-color: #83e3a9;
+  padding: 30px;  
+  border-radius: 40px;
+  font-size: 25px;
+  height: 20vh;
+  width: 500px;
+  box-shadow: 5px 5px 5px 5px;
+  }
+h1 {
+    margin-left: 100px;
+    color: #0A6847;
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+.Box {
+      display: flex;
+      flex-direction: column;
+      background-color: #83e3a9;
+      margin: auto;
+      height: 40vh;
+      width: 500px;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px 5px;
+}
+h3 {
+  color: #0A6847;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.smallBox {
+  height: 35vh;
+  margin: auto;
+  width: 450px;
+}
+.App {
+  display: flex;
+  background-color: #eaded7;
+  min-height: 90vh;
+  width: 600px;
+  margin-top: 20px;
+  border-radius: 40px;
+  box-shadow: 5px 4px 4px 4px rgb(84, 78, 78);
+}
+
+h2 {
+  color: #0A6847;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  width: 550px;
+  background-color: #ACE1AF;
+  border-radius: 50px;
+  margin: auto;
+  
+}
+.crossed {
+  text-decoration: line-through 2px green;
+  background-color: #83e3a9;
+}
+input {
+  padding: 10px;
+  border-radius: 30px;
+  font-family: "Encode Sans Expanded", sans-serif;
+  color: #0A6847;
+  border: none;
+  box-shadow: 1px 1px 1px 1px;
+}
+.spisok {
+  list-style-type: none;
+  padding: 10px;
+  font-family: "Encode Sans Expanded", sans-serif;
+}
+.btn {
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Encode Sans Expanded", sans-serif;
+  border: none;
+  border-radius: 20px;
+  color: #0A6847;
+  font-weight: bold;
+}
+.add {
+  margin-top: 15px;
+  width: 70%;
+  margin-left: 25px;
+}
+.delete {
+  width: 70%;
+  margin-left: 25px;
+}
+.noteList {
+  margin-left: 120px;
+}
+.plus {
+  margin-left: 10px;
+}
+.clear {
+  margin-left: 350px;
+  margin-top: 5px;
+}
+.notes {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+.fonImage {
+  position: absolute;
+  margin-top: 250px;
+  margin-left: -130px;
+  
+}
+img {
+  border-radius: 50%;
+}
+.fon {
+  position: absolute;
+  margin-left: -130px;
+  
+}
