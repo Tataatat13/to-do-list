@@ -1,7 +1,5 @@
 import { Component } from "react";
-import Chekin from './chekin.png';
-
-
+import IconDelete from "./icons8-delete.svg";
 
 export class ToDoList extends Component {
     state = {
@@ -21,19 +19,15 @@ addItem (input) {
     listArray.push(input);
     this.setState({toDoList: listArray, userInput:''})
 }}
-
-deleteItem (){
-    let listArray=this.state.toDoList;
-    listArray = [];
-    this.setState({toDoList: listArray})
+deleteItemByIndex(index) {
+    let listArray = this.state.toDoList;
+    listArray.splice(index, 1); 
+    this.setState({ toDoList: listArray });
 }
 crossedWord = (e) => {
     const li = e.target;
     li.classList.toggle('crossed');
-
 }
-
-
 onFormSubmit (e){
     e.preventDefault();
 }
@@ -42,28 +36,28 @@ onFormSubmit (e){
         return(
     <div>
     <form onSubmit={this.onFormSubmit}>
-        <div className="bigBox">
-            <input type="text" placeholder="What do you want to do?"
+        <div className="inpbx">
+            <input type="text"
             onChange = {(e) => {this.onChangeEvent(e.target.value)}}
             value ={this.state.userInput}/>
+
+            <button className="add btn" onClick = {() => this.addItem(this.state.userInput)}>Add</button>
+        
         </div>
         
-        <div>
-        <button className="add btn" onClick = {() => this.addItem(this.state.userInput)}>Add</button>
-        </div>
-
         <div className="bottom">
             <ul className="spisok">
                 {this.state.toDoList.map((item, index) => (
-                <li className="spisok" onClick={this.crossedWord} key = {index}>
-                    <img src={Chekin} alt="chekin" width="10px"/>
-                    {item}</li>
+                <li className="spisok item-background" onClick={this.crossedWord} key = {index}>
+                    {item}
+                    <button className="delete-item btn"
+                            onClick={() => this.deleteItemByIndex(index)}
+                            >
+                            <img src={IconDelete} alt="icons"/>
+                            </button>
+                </li>
                 ))}
             </ul>
-        </div>
-
-        <div>
-            <button className=" delete btn" onClick = {() => this.deleteItem()}>Delete</button>
         </div>
         </form>
     </div>

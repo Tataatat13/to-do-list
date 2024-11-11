@@ -1,152 +1,85 @@
 body {
-  background-color: #fdfcfc;
-  
+  background: #134B70;
 }
 .head {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  
-}
-.top {
-  display: flex;
-  flex-direction: column;
-}
-  .header {
-  background-color: #83e3a9;
-  padding: 30px;  
-  border-radius: 40px;
-  font-size: 25px;
-  height: 20vh;
-  width: 500px;
-  box-shadow: 5px 5px 5px 5px;
-  }
-h1 {
-    margin-left: 100px;
-    color: #0A6847;
-    font-family: "Encode Sans Expanded", sans-serif;
-}
-.Box {
-      display: flex;
-      flex-direction: column;
-      background-color: #83e3a9;
-      margin: auto;
-      height: 40vh;
-      width: 500px;
-      border-radius: 20px;
-      box-shadow: 5px 5px 5px 5px;
-}
-h3 {
-  color: #0A6847;
-  font-family: "Encode Sans Expanded", sans-serif;
-  font-size: 20px;
-  text-align: center;
-}
-.smallBox {
-  height: 35vh;
-  margin: auto;
-  width: 450px;
-}
-.App {
-  display: flex;
-  background-color: #eaded7;
-  min-height: 90vh;
-  width: 600px;
-  margin-top: 20px;
-  border-radius: 40px;
-  box-shadow: 5px 4px 4px 4px rgb(84, 78, 78);
-}
-
-h2 {
-  color: #0A6847;
-  font-family: "Encode Sans Expanded", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 80vh;
-  width: 550px;
-  background-color: #ACE1AF;
-  border-radius: 50px;
-  margin: auto;
-  
 }
-.crossed {
-  text-decoration: line-through 2px green;
-  background-color: #83e3a9;
+h1 {
+  font-size: 65px;
+  color: #EEEEEE;
+  font-family: "Encode Sans Expanded", sans-serif;
+  letter-spacing: 6.8px;
+}
+h2 {
+  color: #EEEEEE;
+  font-size: 30px;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: bold;
+}
+.inpbx {
+  display: flex;
+  justify-content: center;
 }
 input {
   padding: 10px;
-  border-radius: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   font-family: "Encode Sans Expanded", sans-serif;
-  color: #0A6847;
+  color: #EEEEEE;
   border: none;
-  box-shadow: 1px 1px 1px 1px;
+  background-color: #201E43;
 }
 .spisok {
   list-style-type: none;
   padding: 10px;
   font-family: "Encode Sans Expanded", sans-serif;
+  color: #EEEEEE;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .btn {
-  padding: 10px;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Encode Sans Expanded", sans-serif;
   border: none;
-  border-radius: 20px;
-  color: #0A6847;
+  background-color: #508C9B;
+  color: #201E43;
   font-weight: bold;
 }
+.crossed {
+  text-decoration: line-through 2px #201E43;
+}
 .add {
-  margin-top: 15px;
-  width: 70%;
-  margin-left: 25px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
-.delete {
-  width: 70%;
-  margin-left: 25px;
+.delete-item{
+  border-radius: 20px;
+  margin-left: 150px;
 }
-.noteList {
-  margin-left: 120px;
+.item-background {
+  background-color: #508C9B;
+  border-radius: 10px;
+  margin: 10px;
 }
-.plus {
-  margin-left: 10px;
-}
-.clear {
-  margin-left: 350px;
-  margin-top: 5px;
-}
-.notes {
-  list-style-type: none;
-  margin: 0;
-  padding: 10px;
-}
-.fonImage {
-  position: absolute;
-  margin-top: 250px;
-  margin-left: -130px;
-  
-}
-img {
-  border-radius: 50%;
-}
-.fon {
-  position: absolute;
-  margin-left: -130px;
-}
-@media all and (max-width: 800px) {
-.Box {
-  margin-top: 30px;
-}
-.fon {
-  margin-left: 0;
-  margin-top: 20px;
-}
-.fonImage {
-margin-left: -30px;
-margin-top: 258px;
-}
+@media all and (max-width: 1000px) {
+  h1 {
+    font-size: 35px;
+    color: #EEEEEE;
+    font-family: "Encode Sans Expanded", sans-serif;
+    letter-spacing: 2.8px;
+  }
+  h2 {
+    color: #EEEEEE;
+    font-size: 15px;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-weight: bold;
+  }
 }
