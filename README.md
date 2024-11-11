@@ -1,7 +1,7 @@
 <h1 align="center"><a href="https://daily-planer.netlify.app/"/a>To-Do-App</h1>
 
 
-<img src="https://github.com/Tataatat13/to-do-list/blob/main/mockup.jpg"/>
+<img src="https://github.com/Tataatat13/to-do-list/blob/main/project-img1.png"/>
 
 <h2>Description</h2>
 
